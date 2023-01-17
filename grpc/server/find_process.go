@@ -4,7 +4,7 @@ import (
 	"context"
 	"strconv"
 
-	pb "github.com/dunstorm/pm2-go/proto"
+	pb "github.com/golimix/pm2-go/proto"
 	"google.golang.org/grpc/status"
 )
 

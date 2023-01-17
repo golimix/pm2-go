@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	pb "github.com/dunstorm/pm2-go/proto"
-	"github.com/dunstorm/pm2-go/shared"
+	pb "github.com/golimix/pm2-go/proto"
+	"github.com/golimix/pm2-go/shared"
 )
 
 type Data struct {

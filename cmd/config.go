@@ -7,7 +7,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/dunstorm/pm2-go/utils"
+	"github.com/golimix/pm2-go/utils"
 	"github.com/spf13/cobra"
 )
 

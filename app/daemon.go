@@ -7,8 +7,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/dunstorm/pm2-go/grpc/server"
-	"github.com/dunstorm/pm2-go/utils"
+	"github.com/golimix/pm2-go/grpc/server"
+	"github.com/golimix/pm2-go/utils"
 	"github.com/rs/zerolog"
 )
 
@@ -111,7 +111,7 @@ func (app *App) SpawnDaemon() {
 		// wait for 50051 port to open with a timeout of 2s
 		found := false
 		for i := 0; i < 200; i++ {
-			if utils.IsPortOpen(50051) {
+			if utils.IsPortOpen(50052) {
 				found = true
 				break
 			}
@@ -127,6 +127,6 @@ func (app *App) SpawnDaemon() {
 	}
 
 	if wasReborn() {
-		server.New(50051)
+		server.New(50052)
 	}
 }

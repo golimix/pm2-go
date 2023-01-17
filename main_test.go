@@ -3,17 +3,17 @@ package main
 import (
 	"testing"
 
-	"github.com/dunstorm/pm2-go/app"
-	"github.com/dunstorm/pm2-go/grpc/client"
-	pb "github.com/dunstorm/pm2-go/proto"
-	"github.com/dunstorm/pm2-go/shared"
-	"github.com/dunstorm/pm2-go/utils"
+	"github.com/golimix/pm2-go/app"
+	"github.com/golimix/pm2-go/grpc/client"
+	pb "github.com/golimix/pm2-go/proto"
+	"github.com/golimix/pm2-go/shared"
+	"github.com/golimix/pm2-go/utils"
 	"github.com/rs/zerolog"
 )
 
 func isServerRunning() bool {
-	// check if 50051 is open
-	return utils.IsPortOpen(50051)
+	// check if 50052 is open
+	return utils.IsPortOpen(50052)
 }
 
 func isProcessAdded(master *app.App, name string) bool {
@@ -106,7 +106,7 @@ func TestDeleteEcosystem(t *testing.T) {
 }
 
 func TestCronRestart(t *testing.T) {
-	c, err := client.New(50051)
+	c, err := client.New(50052)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -131,7 +131,7 @@ func TestCronRestart(t *testing.T) {
 }
 
 func TestNoCronRestart(t *testing.T) {
-	c, err := client.New(50051)
+	c, err := client.New(50052)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -155,7 +155,7 @@ func TestNoCronRestart(t *testing.T) {
 }
 
 func TestFailedCronRestart(t *testing.T) {
-	c, err := client.New(50051)
+	c, err := client.New(50052)
 	if err != nil {
 		t.Fatal(err)
 	}

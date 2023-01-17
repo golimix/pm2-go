@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/dunstorm/pm2-go/utils"
+	"github.com/golimix/pm2-go/utils"
 	"github.com/fatih/color"
 
 	"github.com/spf13/cobra"

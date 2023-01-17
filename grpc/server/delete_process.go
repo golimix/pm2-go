@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	pb "github.com/dunstorm/pm2-go/proto"
+	pb "github.com/golimix/pm2-go/proto"
 )
 
 // delete process

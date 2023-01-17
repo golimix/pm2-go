@@ -5,7 +5,7 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"github.com/dunstorm/pm2-go/utils"
+	"github.com/golimix/pm2-go/utils"
 	"github.com/spf13/cobra"
 )
 

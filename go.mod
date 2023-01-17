@@ -1,4 +1,4 @@
-module github.com/dunstorm/pm2-go
+module github.com/golimix/pm2-go
 
 go 1.18
 

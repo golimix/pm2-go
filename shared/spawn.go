@@ -9,8 +9,8 @@ import (
 	"strings"
 	"syscall"
 
-	pb "github.com/dunstorm/pm2-go/proto"
-	"github.com/dunstorm/pm2-go/utils"
+	pb "github.com/golimix/pm2-go/proto"
+	"github.com/golimix/pm2-go/utils"
 	"github.com/rs/zerolog"
 )
 

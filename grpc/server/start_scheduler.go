@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	pb "github.com/dunstorm/pm2-go/proto"
-	"github.com/dunstorm/pm2-go/shared"
-	"github.com/dunstorm/pm2-go/utils"
+	pb "github.com/golimix/pm2-go/proto"
+	"github.com/golimix/pm2-go/shared"
+	"github.com/golimix/pm2-go/utils"
 )
 
 func updateProcessMap(handler *Handler, processId int32, p *os.Process) {

@@ -3,7 +3,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/dunstorm/pm2-go/shared"
+	"github.com/golimix/pm2-go/shared"
 	"github.com/spf13/cobra"
 )
 

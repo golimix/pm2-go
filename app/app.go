@@ -1,10 +1,10 @@
 package app
 
 import (
-	"github.com/dunstorm/pm2-go/grpc/client"
-	pb "github.com/dunstorm/pm2-go/proto"
-	"github.com/dunstorm/pm2-go/shared"
-	"github.com/dunstorm/pm2-go/utils"
+	"github.com/golimix/pm2-go/grpc/client"
+	pb "github.com/golimix/pm2-go/proto"
+	"github.com/golimix/pm2-go/shared"
+	"github.com/golimix/pm2-go/utils"
 	"github.com/rs/zerolog"
 )
 
@@ -15,7 +15,7 @@ type App struct {
 
 func New() *App {
 	logger := utils.NewLogger()
-	client, err := client.New(50051)
+	client, err := client.New(50052)
 	if err != nil {
 		logger.Fatal().Err(err).Msg("Failed to create client")
 	}

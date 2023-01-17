@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	app "github.com/dunstorm/pm2-go/app"
+	app "github.com/golimix/pm2-go/app"
 	"github.com/spf13/cobra"
 )
 
